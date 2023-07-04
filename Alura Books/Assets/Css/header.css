@@ -57,3 +57,47 @@
 .button__contain {
     display: none;
 }
+
+.contain__title {
+    display: none;
+}
+
+.options {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .contain__title, .contain__title-bold {
+        font-family: var(--secondary-font);
+        font-size: 30px;
+    }
+
+    .contain__title {
+        font-weight: 400;
+        display: block;
+    }
+
+    .contain__title-bold {
+        font-weight: 700;
+    }
+
+    .options {
+        display: flex;
+    }
+
+    .options__item {
+        padding: 0 1rem;
+        text-transform: uppercase;
+    }
+
+    .options__link {
+        text-decoration: none;
+        color: var(--black);
+    }
+
+    .transparent-image-contain, .header__hamburger-menu {
+        display: none;
+    }
+    
+}
