@@ -7,3 +7,51 @@ hr {
     padding: 1rem;
     text-align: center;
 }
+
+.footer-list {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .footer {
+        display: flex;
+        text-align: left;
+        justify-content: space-around;
+    }
+
+    .footer-list {
+        display: block;
+    }
+
+    .footer-list__item {
+        display: flex;
+        align-items: center;
+        margin: 0.6rem 0;
+    }
+
+    .footer-list__link {
+        color: var(--gray);
+        text-decoration: none;
+        margin-left: 0.6rem;
+    }
+
+    .footer-list__title {
+        color: var(--light-gray);
+        font-size: 14px;
+    }
+
+    .footer__title {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .footer-list {
+        border-left: 1px solid var(--light-gray);
+        padding-left: 1rem;
+    }
+
+    .footer {
+        padding: 3rem 0;
+    }
+}

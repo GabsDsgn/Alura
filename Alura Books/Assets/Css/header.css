@@ -7,6 +7,14 @@
     background-position: center;
 }
 
+.button__contain:checked ~ .contain__label > .header__hamburger-menu {
+    background-image: url("../Imgs/Menu Aberto.svg");
+}
+
+.button__contain:checked~.contain__label {
+    background: var(--blue-gradient);
+}
+
 .header {
     background-color: var(--white);
     display: flex;
@@ -66,6 +74,10 @@
     display: none;
 }
 
+.contain__text {
+    display: none;
+}
+
 @media screen and (min-width: 1024px) {
 
     .contain__title, .contain__title-bold {
@@ -99,5 +111,36 @@
     .transparent-image-contain, .header__hamburger-menu {
         display: none;
     }
+
+    .options__button:checked ~.menu-list {
+        display: block;
+        width: auto;
+    }
+
+    .options__button {
+        display: none;
+    }
+
     
+}
+
+@media screen and (min-width: 1728px) {
+    .contain__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--black);
+    }
+
+    .header {
+        padding: 0 2rem;
+    }
+
+    .options {
+        margin-right: auto;
+    }
+
+    .contain__text {
+        display: block;
+    }
 }
