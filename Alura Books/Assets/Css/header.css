@@ -121,6 +121,24 @@
         display: none;
     }
 
+    .options__button:checked ~ .options__label > .options__item {
+        background: var(--blue-gradient);
+        color: var(--white);
+    }
+
+    .options__item {
+        padding: 2rem 1rem;
+    }
+
+    .menu-list-item:hover {
+        background: var(--blue-gradient);
+    }
+
+    .menu-list-item:hover > .menu-list-link {
+        -webkit-text-fill-color: var(--white);
+        text-decoration: none;
+    }
+
     
 }
 

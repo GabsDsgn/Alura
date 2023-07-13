@@ -29,6 +29,11 @@
     font-weight: 700;
 }
 
+.topics__link:hover {
+    color: var(--orange);
+    background-color: var(--white);
+}
+
 @media screen and (min-width: 1024px) {
     .topics__title {
         font-size: 24px;

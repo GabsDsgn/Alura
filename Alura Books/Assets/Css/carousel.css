@@ -72,6 +72,10 @@
     text-decoration: none;
 }
 
+.buttons__anchor:hover {
+    background-color: var(--blue);
+}
+
 @media screen and (min-width: 1024px) {
     .carousel__title {
         font-size: 26px;
